@@ -1,0 +1,75 @@
+/* 整体页面的样式设置 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 页面整体包装容器样式，用于统一布局控制 */
+.page-wrapper {
+    display: flex;
+    height: 100vh; /* 占满整个视口高度 */
+}
+
+/* 主标题样式，竖向排列在所有照片左边，增大字体大小 */
+.main-title {
+    writing-mode: vertical-rl; /* 文字竖排，从右到左 */
+    text-orientation: upright; /* 保持文字直立方向 */
+    font-size: 40px; /* 增大字体大小，可根据实际需求进一步调整 */
+    width: 20%; /* 控制标题宽度占比，可根据实际调整，确保不挤压图片布局 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    color: #E0E000; /* 主标题文字颜色改为偏黄的颜色，与整体黄色调适配 */
+}
+
+/* 返回主页链接（HOME）样式，与主标题样式一致但字体更小，下移到该列中部位置 */
+.home-link {
+    writing-mode: vertical-rl; /* 文字竖排，从右到左 */
+    text-orientation: upright; /* 保持文字直立方向 */
+    font-size: 30px; /* 设置比标题小的字体大小，可根据实际微调 */
+    margin-top: 30%; /* 通过设置较大的上边距，使其下移到该列中部位置左右，可根据实际调整具体数值 */
+	margin-right: 10%;
+    /* 根据页面布局情况调整位置，大致在图片区域下方对应的列中间位置，可微调 */
+    color: #E0E000; /* 链接文字颜色改为偏黄的颜色，统一色调 */
+}
+
+.home-link a {
+    color: #E0E000; /* 链接文字颜色改为偏黄的颜色，保持一致 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+.home-link a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+
+/* 图片表格样式 */
+.image-table {
+    width: 80%; /* 表格整体宽度占页面宽度的比例，可根据实际调整 */
+    margin-left: auto; /* 表格在水平方向上靠右对齐，与标题在页面中合理分布 */
+    border-collapse: collapse; /* 合并表格边框 */
+    background-color: #FFFFE0; /* 表格添加浅黄色背景，使其融入黄色调，可调整深浅 */
+}
+
+.image-table td {
+    padding: 10px; /* 单元格内边距，控制图片与文字、单元格边界的间距，可调整 */
+    text-align: center;
+    background-color: #FFFFE0; /* 单元格也设置浅黄色背景，增加层次感，可调整深浅 */
+}
+
+/* 每张图片样式，通过width属性调节图片大小（此处可根据需求修改具体的百分比值来调节大小） */
+.image-table img {
+    width: 80%; /* 这里将图片宽度设置为单元格宽度的80%，可调整该百分比来改变图片大小 */
+    display: block;
+    margin: 0 auto; /* 图片在单元格内水平居中 */
+    box-shadow: 2px 2px 4px rgba(224, 224, 0, 0.3); /* 给图片添加偏黄的阴影，使其与黄色调更融合，可调整参数 */
+}
+
+/* 图片文字说明样式 */
+.photo-caption {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    background-color: #FFFFE0; /* 文字说明背景色改为浅黄色，与整体协调 */
+    margin: 0;
+    color: #E0E000; /* 文字说明颜色改为偏黄的颜色，统一色调 */
+}
