@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page 2 - Cats</title>
+    <style type="text/css">
+        /* 标题样式，设置为粉色，添加阴影 */
+      .title-style {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 50px;
+            color: #FFC0CB; /* 设置标题字体颜色为粉色，可根据喜好调整具体粉色深浅 */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* 添加阴影效果，参数可按需调整 */
+        }
+
+        /* 副标题样式，删除阴影，保留颜色，其他间距等设置不变 */
+      .sub-title {
+            color: #DD93BF; /* 保持与标题一样的粉色 */
+            text-align: center;
+            font-size: 23px; /* 改小文字大小，可根据实际需求进一步调整 */
+            text-shadow: none; /* 删除阴影效果 */
+            margin-bottom: 10px; /* 缩短下边距，减少文字之间的垂直间隔，可按需微调 */
+            line-height: 1.1; /* 调整行高，进一步控制文字行与行之间的间隔，使文字更紧凑，可根据喜好调整数值 */
+            margin-top: 15px; /* 适当设置上边距，避免文字过于紧凑，可按需调整 */
+        }
+
+        /* 底部链接文字样式（除 HOME 外），删除阴影，保留颜色，其他间距等设置调整 */
+      .bottom-link-text {
+            color: #FFC0CB; /* 保持与标题一样的粉色 */
+            text-align: center;
+            font-size: 23px; /* 改小文字大小，可根据实际需求进一步调整 */
+            text-shadow: none; /* 删除阴影效果 */
+            margin-top: 40px; /* 适当调整与上方元素的间距，可按需微调 */
+            line-height: 1.2; /* 调整行高，使文字更紧凑，可根据喜好调整数值 */
+        }
+
+        /* HOME 文字样式，比其他底部文字大，删除阴影，保留颜色，其他间距等设置调整 */
+      .bottom-link-home {
+            color: #C580A6; /* 保持与标题一样的粉色 */
+            text-align: center;
+            font-size: 27px; /* 改小文字大小，相对其他底部文字仍保持稍大一点，可根据实际需求进一步调整 */
+            text-shadow: none; /* 删除阴影效果 */
+            line-height: 1.2; /* 调整行高，使文字更紧凑，可根据喜好调整数值 */
+        }
+
+        /* 箭头样式 */
+      .arrow {
+            margin: 0 10px;
+        }
+
+        /* 整体页面背景设置为淡粉色 */
+        body {
+            background-color: #FFE4E1; /* 将背景颜色修改为淡粉色，可根据需求调整颜色值 */
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        td,
+        th {
+            color: #000000;
+        }
+
+        a:link {
+            color: #1607FD;
+        }
+
+        a:hover {
+            color: #F70307;
+        }
+
+        /* 图片容器样式，用于实现四张图片并排布局 */
+      .image-container {
+            display: flex;
+            justify-content: space-around; /* 让图片在水平方向均匀分布，实现并排效果 */
+            align-items: center; /* 垂直方向居中对齐图片（如果图片高度不一致等情况，可保持整体视觉上垂直居中） */
+            margin-top: 30px; /* 根据实际情况调整图片距标题的距离 */
+        }
+
+        img {
+            width: 200px; /* 初始宽度，可通过后续添加的类名精细调节，这里设置图片长大于宽 */
+            height: 250px; /* 将图片高度统一改为250px */
+            border-radius: 10px;
+            margin: 10px; /* 图片间距，可根据喜好微调 */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 针对四张图片分别设置不同类名，用于精细调节大小 */
+      .img1 {
+            width: 200px; /* 可根据需求调整宽度数值 */
+            height: 270px; /* 保持高度为250px，宽度可根据需求调整 */
+        }
+
+      .img2 {
+            width: 220px; /* 可根据需求调整宽度数值 */
+            height: 270px; /* 保持高度为250px，宽度可根据需求调整 */
+        }
+
+      .img3 {
+            width: 200px; /* 可根据需求调整宽度数值 */
+            height: 270px; /* 保持高度为250px，宽度可根据需求调整 */
+        }
+
+      .img4 {
+            width: 210px; /* 可根据需求调整宽度数值 */
+            height: 270px; /* 保持高度为250px，宽度可根据需求调整 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 音乐播放代码，与主页一致，实现音乐继续播放 -->
+    <audio autoplay loop>
+        <source src="bgm.mp3" type="audio/mpeg">
+    </audio>
+    <h1 class="title-style">Cute Cats</h1>
+    <!-- 使用图片容器来放置四张图片，实现并排布局 -->
+    <div class="image-container">
+        <!-- 插入第一张猫咪图片，需替换为实际文件名，可调整路径，并添加对应类名用于精细调节大小 -->
+        <a href="#"><img src="../image/eb_huitou.jpg.png" alt="Cat 1_1" class="img1"></a>
+        <!-- 插入第二张猫咪图片，需替换为实际文件名，可调整路径，并添加对应类名用于精细调节大小 -->
+        <a href="#"><img src="../image/eb_anxiang.jpg.png" alt="Cat 1_2" class="img2"></a>
+        <!-- 插入第三张猫咪图片，需替换为实际文件名，可调整路径，并添加对应类名用于精细调节大小 -->
+        <a href="#"><img src="../image/2.png" alt="Cat 2_1" class="img3"></a>
+        <!-- 插入第四张猫咪图片，需替换为实际文件名，可调整路径，并添加对应类名用于精细调节大小 -->
+        <a href="#"><img src="../image/pw_zhengmian.jpg.png" alt="Cat 2_2" class="img4"></a>
+    </div>
+    <!-- 以下是整体左右布局的容器，使用 flex 布局，设置左右两部分间隔 -->
+    <div style="display: flex; justify-content: space-around;">
+        <!-- 左边部分的容器，使用 flex 布局，垂直方向排列内容 -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <!-- 左边部分的文字说明，样式使用.sub - title -->
+            <p class="sub-title">这是二饼，d9著名打卡点</p>
+            <p class="sub-title">因饼妃卓群的体重又被爱称为”半挂“;</p>
+      </div>
+        <!-- 右边部分的容器，使用 flex 布局，垂直方向排列内容 -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+            <!-- 右边部分的文字说明，样式使用.sub - title -->
+        <p class="sub-title">这是泡文，</p>
+        <p class="sub-title">如你所见，泡文是宿舍里最小黑洞。</p>
+        </div>
+    </div>
+    <!-- 以下是底部返回主页链接，包括说明文字、箭头和 HOME 文字 -->
+    <p class="bottom-link-text">click this to go back <span class="arrow">&rarr;</span><span class="bottom-link-home"><a href="index.html">HOME</a></span></p>
+</body>
+
+</html>

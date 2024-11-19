@@ -1,0 +1,51 @@
+/* 整体页面的样式设置 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 主标题样式 */
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #EFFBF1;
+}
+
+/* 整体瀑布流容器样式 */
+.waterfall-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 每列的样式 */
+.waterfall-column {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* 每张照片及对应文字说明的容器样式 */
+.photo-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 照片样式，让其占满所在容器宽度 */
+.photo-item img {
+    width: 100%;
+    display: block;
+}
+
+/* 文字说明样式 */
+.photo-item p {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
