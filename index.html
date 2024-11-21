@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<audio id="bgm" autoplay loop>
+    <source src="bgm.mp3" type="audio/mpeg">
+</audio>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+
+    <style type="text/css">
+        /* 图片容器样式 */
+      .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* 副标题样式 */
+      .sub-title {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 20px; /* 根据实际情况调整与图片区域的间距 */
+        }
+
+        /* 底部文字样式 */
+      .bottom-text {
+            color: white;
+            text-align: center;
+            font-size: 40px; /* 根据需要调整大小，这里设置为比标题60px小的值 */
+            text-shadow: 2px 2px 4px #000000;
+            margin-top: 80px; /* 根据实际情况调整与图片区域的间距 */
+        }
+
+        /* 整体页面的样式设置 */
+        body {
+            background-image: url('image/1hello_background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        td,
+        th {
+            color: #000000;
+        }
+
+        body {
+	background-color: #000000;
+	background-image: url(image/sun1.jpg.png);
+        }
+
+        a:link {
+            color: #1607FD;
+        }
+
+        a:hover {
+            color: #F70307;
+        }
+
+        /* 主标题样式 */
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* 图片链接样式，添加悬浮效果相关样式 */
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            margin-right: 30px;
+            transition: transform 0.3s ease; /* 添加过渡效果，让变化更平滑，可调整时间和过渡函数 */
+        }
+
+        img:hover {
+            transform: translateY(-10px); /* 鼠标悬停时图片向上移动10px，营造悬浮感，可调整数值 */
+        }
+
+        /* 图片容器样式，可用于布局调整 */
+      .images-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 音乐提示文字样式 */
+      .music-tip {
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 10px;
+        }
+
+        /* 新增样式，用于设置右下角链接的样式 */
+      .doom-link {
+            color: white;
+            text-align: right;
+            font-size: 20px;
+            text-shadow: 1px 1px 2px #000000;
+            margin-top: 20px;
+            margin-right: 20px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WELCOME to My Web </h1>
+
+    <p class="music-tip">before we start, click here to enjoy the music <span id="music-button" style="cursor: pointer;">🎶</span></p>
+    <script>
+        // 获取音频元素和音符按钮元素
+        var audio = document.getElementById('bgm');
+        var musicButton = document.getElementById('music-button');
+        var isPlaying = false;
+        musicButton.addEventListener('click', function () {
+            if (isPlaying) {
+                audio.pause();
+            } else {
+                if (audio.currentTime === audio.duration) {
+                    audio.currentTime = 0;
+                }
+                audio.play();
+            }
+            isPlaying =!isPlaying;
+        });
+    </script>
+
+
+    <p class="sub-title">This is HUST in my view:（by 8aozi）</p>
+    <div class="image-container">
+        <a href="web/page2.html"><img src="image/2.png" alt="Link to Page 2"></a>
+        <a href="web/page3.html"><img src="image/37.png" alt="Link to Page 3"></a>
+        <a href="web/page4.html"><img src="image/5 (1).png" alt="Link to Page 4"></a>
+        <a href="web/page5.html"><img src="image/51.png" alt="Link to Page 5"></a>
+    </div>
+    <p class="bottom-text">click the photo you like to visit!</p>
+    <!-- 新增的链接部分 -->
+    <a href="https://qnnnnnnnnn.github.io/qs/501.html" class="doom-link">→ to my DOOM</a>
+</body>
+</html>
